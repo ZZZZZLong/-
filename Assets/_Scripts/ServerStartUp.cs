@@ -61,15 +61,15 @@ public class ServerStartUp : MonoBehaviour
 
         // 连接到游戏服务器
         string gameServerAddress = gameServer.Status.Address;
-        int gameServerPort = gameServer.Status.Ports["default"];
-        bool connected = ConnectToGameServer(gameServerAddress, gameServerPort);
-        if (!connected)
-        {
-            Debug.LogError("Failed to connect to game server.");
-            return;
-        }
+        //int gameServerPort = gameServer.Status.Ports["default"];
+        //bool connected = ConnectToGameServer(gameServerAddress, gameServerPort);
+        //if (!connected)
+        //{
+          //  Debug.LogError("Failed to connect to game server.");
+        //    return;
+        //}
 
-        Debug.Log("Multiverse SDK initialized.");
+        //Debug.Log("Multiverse SDK initialized.");
     }
 
     private bool ConnectToGameServer(string address, int port)
